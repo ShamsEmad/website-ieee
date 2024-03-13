@@ -1,0 +1,45 @@
+.about-ieee {
+  padding: 50px 0;
+}
+
+.board-tabs,
+.about-tabs,
+.about-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.board-tabs .btn,
+.about-tabs .btn {
+  background-color: var(--main-color);
+  padding: 20px 25px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 1s;
+  border: 3px solid var(--main-color);
+}
+.board-tabs .btn:hover,
+.about-tabs .btn:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+.about-desc .img-holder img {
+  max-width: 500px;
+}
+.about-desc .details {
+  width: 500px;
+}
+.about-desc h2 {
+  font-size: 40px;
+  margin: 25px 0;
+  color: var(--main-color);
+}
+.about-desc p {
+  color: #8b8b8b;
+  line-height: 2;
+}

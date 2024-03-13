@@ -1,0 +1,110 @@
+/* Start Events Page */
+
+section.latest-events .container .grid-events .event .img-hold {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+section.latest-events .container .grid-events .event .img-hold::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  background-color: black;
+  opacity: 0.35;
+}
+section.latest-events .container .grid-events .event .img-hold img {
+  width: 100%;
+}
+
+section.latest-events .container .grid-events .event {
+  border: 6px solid var(--main-color);
+  border-radius: 10px;
+  position: relative;
+  margin: 25px 0;
+}
+section.latest-events .container .grid-events .event .img-desc {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background: linear-gradient(to right, #0f2167, rgba(255, 255, 255, 0.315));
+  padding: 30px 45px;
+  transition: 0.5s;
+  margin: auto 0;
+  background-color: rgba(255, 0, 0, 0.5);
+  overflow-y: auto;
+}
+section.latest-events .container .grid-events .event:hover .img-desc {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+section.latest-events .container .grid-events .event .img-desc h2 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+section.latest-events .container .grid-events .event .img-desc span::after,
+section.latest-events .container .grid-events .event .img-desc span::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  background-color: #aaa;
+  left: 0;
+  bottom: 8px;
+}
+section.latest-events .container .grid-events .event .img-desc span::before {
+  left: 105%;
+}
+section.latest-events .container .grid-events .event .img-desc span {
+  color: var(--third-color);
+  font-size: 15px;
+  margin-left: 10px;
+  position: relative;
+  padding-left: 48px;
+}
+section.latest-events .container .grid-events .event .img-desc p {
+  font-size: 13px;
+  line-height: 2;
+  color: white;
+  width: 100%;
+  margin: 20px 0;
+}
+
+@media (max-width: 690px) {
+  section.latest-events .container .grid-events .event .img-desc {
+    padding: 9px;
+  }
+  section.latest-events .container .grid-events .event .img-desc p {
+    font-size: 10px;
+    width: 100%;
+  }
+  section.latest-events .container .grid-events .event .img-desc span {
+    font-size: 12px;
+  }
+  section.latest-events .container .grid-events .event .img-desc h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 990px) {
+  section.latest-events .container .grid-events .event .img-desc {
+    padding: 20px;
+  }
+  section.latest-events .container .grid-events .event .img-desc p {
+    font-size: 11px;
+    width: 100%;
+  }
+  section.latest-events .container .grid-events .event .img-desc span {
+    font-size: 15px;
+  }
+  section.latest-events .container .grid-events .event .img-desc h2 {
+    font-size: 22px;
+  }
+}
+/* End Events Page */
